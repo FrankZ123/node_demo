@@ -1,7 +1,6 @@
 /**
  * 统计文件夹代码文件数和代码总行数
  */
-
 const fs = require('fs');
 const Path = require('path');
 
@@ -9,12 +8,12 @@ const Path = require('path');
 let line = 0;
 // 文件数
 let file = 0;
-test('D:\\Work\\2noomi\\noomi-master\\core').then(() => {
-    console.log(line);
-    console.log(file);
-});
+countFileAndLine('C:\\Users\\Frank\\Desktop\\ORM\\relaendev\\core');
+console.log(line);
+console.log(file);
 
-async function countFileAndLine(path) {
+
+function countFileAndLine(path) {
     let state = fs.statSync(path);
     if (state.isDirectory()) {
 
