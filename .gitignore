@@ -1,3 +1,8 @@
+# myFiles
+node_modules/
+test/
+
+
 # Logs
 logs
 *.log
